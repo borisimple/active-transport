@@ -1,36 +1,19 @@
 const btnVan = document.querySelector(".btn-van");
-const vanContact = document.querySelector(".van-contact");
 const btnTruck = document.querySelector(".btn-truck");
-const truckContant = [...document.querySelectorAll(".truck-contact")];
-const wrapper = document.querySelector(".wrapper");
-const main = document.querySelector("main");
-const contact = document.querySelector(".contact");
-
+const sectionContact = document.querySelector(".contact");
+const truckContact = document.querySelector(".truck-contact");
+const vanContact = document.querySelector(".van-contact");
 const body = document.querySelector("body");
+const wrapper = document.querySelector(".wrapper");
+
+btnTruck.addEventListener("click", () => {
+  wrapper.classList.replace("van", "truck");
+  body.classList.replace("van", "truck");
+  sectionContact.replaceChild(truckContact, vanContact);
+});
 
 btnVan.addEventListener("click", () => {
-  //   checkCurrentType();
+  wrapper.classList.replace("truck", "van");
   body.classList.replace("truck", "van");
-  main.classList.replace("truck", "van");
-  contact.classList.replace("truck", "van");
-  btnTruck.classList.replace("active", "");
+  sectionContact.replaceChild(vanContact, truckContact);
 });
-btnTruck.addEventListener("click", () => {
-  //   checkCurrentType();
-  body.classList.replace("van", "truck");
-  main.classList.replace("van", "truck");
-  contact.classList.replace("van", "truck");
-  btnTruck.classList.replace("", "active");
-});
-
-trucks = async (a, st) => {
-  a.forEach((element) => {
-    element.style.display = `${st}`;
-  });
-};
-
-// (checkCurrentType = () => {
-//   wrapper.classList.contains("van")
-//     ? (vanContact.style.display = "block") && trucks(truckContant, "none")
-//     : (vanContact.style.display = "none") && trucks(truckContant, "block");
-// })();
