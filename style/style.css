@@ -87,14 +87,14 @@ main h2 {
 main p {
   font-size: 1.2rem;
   padding-bottom: 50px;
+  text-transform: uppercase;
 }
-main div.buttons {
-  max-width: 300px;
+
+div.buttons {
   display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
+  justify-content: center;
 }
-main button {
+div.buttons button {
   width: 150px;
   height: 60px;
   margin: 10px;
@@ -110,20 +110,17 @@ section.contact {
   font-size: 1.1rem;
 }
 section.contact div {
-  max-width: 960px;
+  flex: 1;
 }
 section.contact aside {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   border-radius: 30px;
-  background-color: rgba(255, 255, 255, 0.2);
 }
 section.contact aside ul {
   padding: 20px;
-  line-height: 30px;
-}
-section.contact aside li {
-  list-style: none;
+  line-height: 40px;
 }
 section.contact aside li i {
   margin-right: 10px;
@@ -132,9 +129,29 @@ section.contact aside li img {
   max-width: 30px;
   padding: 5px;
 }
-section.contact aside li:last-child {
-  display: flex;
-  align-items: center;
+
+@media only screen and (max-width: 960px) {
+  main {
+    padding: 20px;
+  }
+  main h1 {
+    font-size: 3rem;
+  }
+  main h2 {
+    font-size: 2rem;
+  }
+  main p {
+    font-size: 1rem;
+  }
+
+  div.buttons button {
+    width: 100px;
+    height: 40px;
+  }
+
+  section.contact {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
