@@ -134,7 +134,7 @@ section.contact {
   }
 }
 
-@media (min-width: 960px) {
+@media (max-width: 960px) {
   main {
     padding: 20px;
     h1 {
@@ -176,6 +176,7 @@ section.contact {
     font-size: 0.8rem;
     aside ul {
       padding: 10px;
+      line-height: 20px;
     }
   }
 }

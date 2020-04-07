@@ -131,7 +131,7 @@ section.contact aside li img {
   padding: 5px;
 }
 
-@media (min-width: 960px) {
+@media (max-width: 960px) {
   main {
     padding: 20px;
   }
@@ -173,6 +173,7 @@ section.contact aside li img {
   }
   section.contact aside ul {
     padding: 10px;
+    line-height: 20px;
   }
 }
 
