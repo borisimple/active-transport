@@ -71,6 +71,7 @@ main {
   h1 {
     text-transform: uppercase;
     font-size: 5rem;
+    margin-top: 50px;
     span.main {
       font-size: 6rem;
     }
@@ -133,7 +134,7 @@ section.contact {
   }
 }
 
-@media (max-width: 960px) {
+@media (min-width: 960px) {
   main {
     padding: 20px;
     h1 {
@@ -155,16 +156,26 @@ section.contact {
   main {
     padding: 20px;
     h1 {
-      font-size: 3.5rem;
+      font-size: 3rem;
     }
     h2 {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
     p {
-      font-size: 0.9rem;
+      font-size: 0.7rem;
+    }
+  }
+
+  div.buttons {
+    button {
+      width: 125px;
+      height: 40px;
     }
   }
   section.contact {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    aside ul {
+      padding: 10px;
+    }
   }
 }
