@@ -133,23 +133,17 @@ section.contact {
   }
 }
 
-@media only screen and (max-width: 960px) {
+@media (max-width: 960px) {
   main {
     padding: 20px;
     h1 {
-      font-size: 3rem;
+      font-size: 4rem;
     }
     h2 {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
     p {
-      font-size: 1rem;
-    }
-  }
-  div.buttons {
-    button {
-      width: 100px;
-      height: 40px;
+      font-size: 1.05rem;
     }
   }
   section.contact {

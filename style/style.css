@@ -130,23 +130,18 @@ section.contact aside li img {
   padding: 5px;
 }
 
-@media only screen and (max-width: 960px) {
+@media (max-width: 960px) {
   main {
     padding: 20px;
   }
   main h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   main h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   main p {
-    font-size: 1rem;
-  }
-
-  div.buttons button {
-    width: 100px;
-    height: 40px;
+    font-size: 1.05rem;
   }
 
   section.contact {
