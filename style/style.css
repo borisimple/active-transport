@@ -148,5 +148,23 @@ section.contact aside li img {
     font-size: 1rem;
   }
 }
+@media (max-width: 570px) {
+  main {
+    padding: 20px;
+  }
+  main h1 {
+    font-size: 3.5rem;
+  }
+  main h2 {
+    font-size: 2rem;
+  }
+  main p {
+    font-size: 0.9rem;
+  }
+
+  section.contact {
+    font-size: 1rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
