@@ -8,7 +8,7 @@
 
 :root {
   --mainBlue: #3f8acd;
-  --truckBgImg: url("/assets/images/road-trucks-bg-blur.jpg");
+  --truckBgImg: url("/assets/images/green-truck.svg");
   --truckBgColor: black;
   --truckText: black;
   --vanBgImg: url("/assets/images/road-van-bg.jpg");
@@ -21,14 +21,6 @@
   --contactVanBorderColor: white;
 }
 
-.wrapper.truck {
-  background-color: var(--bgMainTruck);
-}
-
-.wrapper.van {
-  background-color: var(--bgMainVan);
-}
-
 html,
 body {
   height: 100%;
@@ -36,11 +28,11 @@ body {
 
 body {
   background-image: var(--bgMainTruck);
-  background-size: cover;
-  background-position: center center;
+  background-position: center right;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-clip: border-box;
+  background-size: 60%;
 }
 
 body.truck {
@@ -98,9 +90,10 @@ div.buttons {
 div.buttons button {
   width: 150px;
   height: 60px;
-  margin: 10px;
+  margin: 6px;
   border-radius: 30px;
   border-style: none;
+  background-color: white;
 }
 
 section.contact {
@@ -132,6 +125,10 @@ section.contact aside li img {
 }
 
 @media (max-width: 960px) {
+  body {
+    background-size: 75%;
+  }
+
   main {
     padding: 20px;
   }
@@ -150,6 +147,11 @@ section.contact aside li img {
   }
 }
 @media (max-width: 570px) {
+  body {
+    background-position: center;
+    background-size: 100%;
+  }
+
   main {
     padding: 20px;
   }
