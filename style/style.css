@@ -11,9 +11,9 @@
   --truckBgImg: url("/assets/images/green-truck.svg");
   --truckBgColor: black;
   --truckText: black;
-  --vanBgImg: url("/assets/images/road-van-bg.jpg");
+  --vanBgImg: url("/assets/images/white-van.svg");
   --vanBgColor: white;
-  --vanText: white;
+  --vanText: black;
   --bgMainTruck: rgba(255, 255, 255, 0.3);
   --bgMainVan: rgba(0, 0, 0, 0.5);
   --activeBtnColor: rgba(255, 255, 255, 0.6);
@@ -32,17 +32,18 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-clip: border-box;
-  background-size: 60%;
 }
 
 body.truck {
   background-image: var(--truckBgImg);
   color: var(--truckText);
+  background-size: 60%;
 }
 
 body.van {
   background-image: var(--vanBgImg);
   color: var(--vanText);
+  background-size: 100%;
 }
 
 section.wrapper {
@@ -92,8 +93,14 @@ div.buttons button {
   height: 60px;
   margin: 6px;
   border-radius: 30px;
-  border-style: none;
-  background-color: white;
+  border: 2px solid #fbd257;
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  transition: background-color 200ms ease-in-out, font-size 300ms ease-in-out;
+}
+div.buttons button:hover {
+  background-color: #fbd257;
+  font-size: 0.8rem;
 }
 
 section.contact {
@@ -125,7 +132,7 @@ section.contact aside li img {
 }
 
 @media (max-width: 960px) {
-  body {
+  body.truck {
     background-size: 75%;
   }
 
@@ -167,7 +174,7 @@ section.contact aside li img {
 
   div.buttons button {
     width: 125px;
-    height: 40px;
+    height: 50px;
   }
 
   section.contact {
