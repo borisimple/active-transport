@@ -13,6 +13,10 @@ btnTruck.addEventListener("click", () => {
   body.classList.replace("van", "truck");
   sectionContact.classList.replace("van", "truck");
   sectionContact.replaceChild(truckContact, vanContact);
+  if (btnVan.classList.contains("active")) {
+    btnVan.classList.remove("active");
+  }
+  btnTruck.classList.add("active");
 });
 
 btnVan.addEventListener("click", () => {
@@ -20,4 +24,8 @@ btnVan.addEventListener("click", () => {
   body.classList.replace("truck", "van");
   sectionContact.classList.replace("truck", "van");
   sectionContact.replaceChild(vanContact, truckContact);
+  if (btnTruck.classList.contains("active")) {
+    btnTruck.classList.remove("active");
+  }
+  btnVan.classList.add("active");
 });

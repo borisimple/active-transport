@@ -9,13 +9,11 @@
 :root {
   --mainBlue: #3f8acd;
   --truckBgImg: url("/assets/images/green-truck.svg");
-  --truckBgColor: black;
   --truckText: black;
   --vanBgImg: url("/assets/images/white-van.svg");
-  --vanBgColor: white;
-  --vanText: black;
-  --bgMainTruck: rgba(255, 255, 255, 0.3);
-  --bgMainVan: rgba(0, 0, 0, 0.5);
+  --vanText: white;
+  --bgMainTruck: rgba(255, 255, 255, 0.92);
+  --bgMainVan: rgba(0, 0, 0, 0.925);
   --activeBtnColor: rgba(255, 255, 255, 0.6);
   --contactTruckBorderColor: black;
   --contactVanBorderColor: white;
@@ -35,12 +33,14 @@ body {
 }
 
 body.truck {
+  background-color: var(--bgMainTruck);
   background-image: var(--truckBgImg);
   color: var(--truckText);
   background-size: 60%;
 }
 
 body.van {
+  background-color: var(--bgMainVan);
   background-image: var(--vanBgImg);
   color: var(--vanText);
   background-size: 100%;
@@ -79,6 +79,7 @@ main h2 {
   margin-bottom: 40px;
 }
 main p {
+  font-family: "Montserrat";
   font-size: 1.2rem;
   padding-bottom: 50px;
   text-transform: uppercase;
@@ -87,6 +88,7 @@ main p {
 div.buttons {
   display: flex;
   justify-content: center;
+  align-items: baseline;
 }
 div.buttons button {
   width: 150px;
@@ -94,13 +96,19 @@ div.buttons button {
   margin: 6px;
   border-radius: 30px;
   border: 2px solid #fbd257;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.904);
   cursor: pointer;
-  transition: background-color 200ms ease-in-out, font-size 300ms ease-in-out;
+  transition: background-color 200ms ease-in-out, font-size 300ms ease-in-out, width 300ms ease-in-out, height 300ms ease-in-out;
 }
 div.buttons button:hover {
-  background-color: #fbd257;
   font-size: 0.8rem;
+}
+div.buttons button.active {
+  font-size: 0.8rem;
+  width: 160px;
+  height: 65px;
+  border: 2px solid #b9c153;
+  background-color: #fbd257e9;
 }
 
 section.contact {
@@ -114,7 +122,6 @@ section.contact:before {
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
   bottom: 0;
-  background-color: #bac153;
   content: "";
   height: 32%;
   left: -5%;
@@ -133,6 +140,9 @@ section.contact aside {
 section.contact aside ul {
   padding: 20px;
   line-height: 40px;
+}
+section.contact aside li {
+  font-family: "Montserrat";
 }
 section.contact aside li i {
   margin-right: 10px;

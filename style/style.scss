@@ -10,25 +10,15 @@
 :root {
   --mainBlue: #3f8acd;
   --truckBgImg: url("/assets/images/green-truck.svg");
-  --truckBgColor: black;
   --truckText: black;
   --vanBgImg: url("/assets/images/white-van.svg");
-  --vanBgColor: white;
-  --vanText: black;
-  --bgMainTruck: rgba(255, 255, 255, 0.3);
-  --bgMainVan: rgba(0, 0, 0, 0.5);
+  --vanText: white;
+  --bgMainTruck: rgba(255, 255, 255, 0.92);
+  --bgMainVan: rgba(0, 0, 0, 0.925);
   --activeBtnColor: rgba(255, 255, 255, 0.6);
   --contactTruckBorderColor: black;
   --contactVanBorderColor: white;
 }
-
-// .wrapper.truck {
-//   background-color: var(--bgMainTruck);
-// }
-
-// .wrapper.van {
-//   background-color: var(--bgMainVan);
-// }
 
 html,
 body {
@@ -45,12 +35,14 @@ body {
 }
 
 body.truck {
+  background-color: var(--bgMainTruck);
   background-image: var(--truckBgImg);
   color: var(--truckText);
   background-size: 60%;
 }
 
 body.van {
+  background-color: var(--bgMainVan);
   background-image: var(--vanBgImg);
   color: var(--vanText);
   background-size: 100%;
@@ -88,6 +80,7 @@ main {
     margin-bottom: 40px;
   }
   p {
+    font-family: "Montserrat";
     font-size: 1.2rem;
     padding-bottom: 50px;
     text-transform: uppercase;
@@ -97,23 +90,32 @@ main {
 div.buttons {
   display: flex;
   justify-content: center;
+  align-items: baseline;
   button {
     width: 150px;
     height: 60px;
     margin: 6px;
     border-radius: 30px;
     border: 2px solid #fbd257;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.904);
     cursor: pointer;
-    transition: background-color 200ms ease-in-out, font-size 300ms ease-in-out;
+    transition: background-color 200ms ease-in-out, font-size 300ms ease-in-out,
+      width 300ms ease-in-out, height 300ms ease-in-out;
     &:hover {
-      background-color: #fbd257;
       font-size: 0.8rem;
+    }
+    &.active {
+      font-size: 0.8rem;
+      width: 160px;
+      height: 65px;
+      border: 2px solid #b9c153;
+      background-color: #fbd257e9;
     }
   }
 }
 
 section.contact {
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,7 +125,7 @@ section.contact {
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
     bottom: 0;
-    background-color: #bac153;
+    // background-color: #bac153;
     content: "";
     height: 32%;
     left: -5%;
@@ -134,6 +136,7 @@ section.contact {
     flex: 1;
   }
   aside {
+    
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -143,6 +146,7 @@ section.contact {
       line-height: 40px;
     }
     li {
+      font-family: "Montserrat";
       i {
         margin-right: 10px;
       }
