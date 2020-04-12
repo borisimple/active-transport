@@ -11,7 +11,7 @@
   --mainBlue: #3f8acd;
   --truckBgImg: url("/assets/images/green-truck.svg");
   --truckText: black;
-  --vanBgImg: url("/assets/images/white-van.svg");
+  --vanBgImg: url("/assets/images/delivery-truck.svg");
   --vanText: white;
   --bgMainTruck: rgba(255, 255, 255, 0.92);
   --bgMainVan: rgba(0, 0, 0, 0.925);
@@ -28,24 +28,24 @@ body {
 body {
   background-image: var(--bgMainTruck);
   // background-size: cover;
-  background-position: center right;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-clip: border-box;
+  background-size: 60%;
 }
 
 body.truck {
   background-color: var(--bgMainTruck);
   background-image: var(--truckBgImg);
   color: var(--truckText);
-  background-size: 60%;
+  background-position: center right;
 }
 
 body.van {
   background-color: var(--bgMainVan);
   background-image: var(--vanBgImg);
   color: var(--vanText);
-  background-size: 100%;
+  background-position: center left;
 }
 
 section.wrapper {
