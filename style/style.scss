@@ -115,28 +115,14 @@ div.buttons {
 }
 
 section.contact {
-  
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   font-size: 1.1rem;
-  &:before {
-    border-top-left-radius: 100%;
-    border-top-right-radius: 100%;
-    bottom: 0;
-    // background-color: #bac153;
-    content: "";
-    height: 32%;
-    left: -5%;
-    position: absolute;
-    width: 110%;
-  }
   div {
     flex: 1;
   }
   aside {
-    
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -209,6 +195,10 @@ section.contact {
     button {
       width: 125px;
       height: 50px;
+      &.active {
+        width: 140px;
+        height: 55px;
+      }
     }
   }
   section.contact {
