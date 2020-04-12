@@ -110,6 +110,17 @@ section.contact {
   flex-wrap: wrap;
   font-size: 1.1rem;
 }
+section.contact:before {
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  bottom: 0;
+  background-color: #bac153;
+  content: "";
+  height: 32%;
+  left: -5%;
+  position: absolute;
+  width: 110%;
+}
 section.contact div {
   flex: 1;
 }
@@ -170,6 +181,10 @@ section.contact aside li img {
   }
   main p {
     font-size: 0.7rem;
+  }
+
+  section.contact:after {
+    height: 40%;
   }
 
   div.buttons button {

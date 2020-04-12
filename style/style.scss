@@ -119,6 +119,17 @@ section.contact {
   justify-content: center;
   flex-wrap: wrap;
   font-size: 1.1rem;
+  &:before {
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    bottom: 0;
+    background-color: #bac153;
+    content: "";
+    height: 32%;
+    left: -5%;
+    position: absolute;
+    width: 110%;
+  }
   div {
     flex: 1;
   }
@@ -181,6 +192,12 @@ section.contact {
     }
     p {
       font-size: 0.7rem;
+    }
+  }
+
+  section.contact {
+    &:after {
+      height: 40%;
     }
   }
 
