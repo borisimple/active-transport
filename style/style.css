@@ -8,12 +8,12 @@
 
 :root {
   --mainBlue: #3f8acd;
-  --truckBgImg: url("/assets/images/tr1.svg");
+  --truckBgImg: url("/assets/images/green-truck.svg");
   --truckText: black;
   --vanBgImg: url("/assets/images/dt1.svg");
   --vanText: white;
-  --bgMainTruck: rgba(255, 255, 255, 0.92);
-  --bgMainVan: rgba(0, 0, 0, 0.925);
+  --bgMainTruck: #6394f7;
+  --bgMainVan: #323b5a;
   --activeBtnColor: rgba(255, 255, 255, 0.6);
   --contactTruckBorderColor: black;
   --contactVanBorderColor: white;
@@ -25,7 +25,6 @@ body {
 }
 
 body {
-  background-image: var(--bgMainTruck);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-clip: border-box;
@@ -43,7 +42,8 @@ body.van {
   background-color: var(--bgMainVan);
   background-image: var(--vanBgImg);
   color: var(--vanText);
-  background-position: center center;
+  background-position: center right;
+  offset-distance: 100px;
 }
 
 section.wrapper {
@@ -95,7 +95,7 @@ div.buttons button {
   height: 60px;
   margin: 6px;
   border-radius: 30px;
-  border: 2px solid #fbd257;
+  border: 2px solid #5770fb;
   background-color: rgba(255, 255, 255, 0.904);
   cursor: pointer;
   transition: background-color 200ms ease-in-out, font-size 300ms ease-in-out, width 300ms ease-in-out, height 300ms ease-in-out;
