@@ -1,3 +1,7 @@
+:root {
+  --bgColor: blue;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
