@@ -14,7 +14,7 @@
 
 .wrapper {
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
   max-width: 1140px;
 }
 
@@ -38,6 +38,25 @@ header {
     text-transform: uppercase;
   }
   nav a {
+    color: var(--textColor);
     text-decoration: none;
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    text-align: center;
+    hgroup {
+      padding: 60px 0 20px 0;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+  img {
+    height: 400px;
+    margin-left: -100px;
   }
 }
