@@ -12,6 +12,11 @@
   font-style: 16px;
 }
 
+* a {
+  color: var(--textColor);
+  text-decoration: none;
+}
+
 .wrapper {
   margin: 0 auto;
   padding: 20px;
@@ -38,8 +43,6 @@ header {
     text-transform: uppercase;
   }
   nav a {
-    color: var(--textColor);
-    text-decoration: none;
     font-size: 0.7rem;
   }
 }
@@ -48,6 +51,7 @@ section#contact {
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  justify-content: space-between;
   // &:before {
   //   content: "";
   //   height: 100%;
@@ -67,16 +71,40 @@ section#contact {
     background-color: #4b9ae0;
     div {
       border: 2px solid white;
+      border-radius: 0.2rem;
       padding: 30px;
       margin-bottom: 30px;
       p {
         text-align: center;
         &.kg {
+          font-size: 2rem;
+          font-weight: 700;
           margin-top: 30px;
         }
       }
     }
+    address {
+      text-align: center;
+      font-style: normal;
+      line-height: 2rem;
+      a {
+        // margin-bottom: 20px;
+      }
+      p.name {
+        font-weight: 700;
+      }
+      p span.phone {
+        font-weight: initial;
+        font-size: 0.8rem;
+      }
+    }
   }
+}
+
+footer {
+  text-align: center;
+  font-size: 0.7rem;
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 480px) {
