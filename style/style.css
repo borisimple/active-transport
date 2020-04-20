@@ -58,6 +58,7 @@ section#contact aside {
 section#contact aside div {
   border: 2px solid white;
   padding: 30px;
+  margin-bottom: 30px;
 }
 section#contact aside div p {
   text-align: center;
