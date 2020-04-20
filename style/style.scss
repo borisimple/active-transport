@@ -47,10 +47,34 @@ header {
 section#contact {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+  // &:before {
+  //   content: "";
+  //   height: 100%;
+  //   left: 0;
+  //   position: absolute;
+  //   top: 0;
+  //   width: 100%;
+  //   background: #5068ee;
+  //   border-radius: 0.2rem;
+  //   box-shadow: rgba(0, 58, 119, 0.3) 0 1rem 3.6rem;
+  // }
   aside {
     width: 100%;
     border-radius: 10px;
+    padding: 30px;
+    margin: 2%;
     background-color: #4b9ae0;
+    div {
+      border: 2px solid white;
+      padding: 30px;
+      p {
+        text-align: center;
+        &.kg {
+          margin-top: 30px;
+        }
+      }
+    }
   }
 }
 

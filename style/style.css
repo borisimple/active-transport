@@ -46,11 +46,24 @@ header nav a {
 section#contact {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 section#contact aside {
   width: 100%;
   border-radius: 10px;
+  padding: 30px;
+  margin: 2%;
   background-color: #4b9ae0;
+}
+section#contact aside div {
+  border: 2px solid white;
+  padding: 30px;
+}
+section#contact aside div p {
+  text-align: center;
+}
+section#contact aside div p.kg {
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 480px) {
