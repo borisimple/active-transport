@@ -54,6 +54,10 @@ main hgroup {
   text-transform: uppercase;
 }
 
+.parallax {
+  width: 100%;
+}
+
 img {
   width: 100%;
   margin-left: -30%;
@@ -129,6 +133,20 @@ footer {
   }
   main h2 {
     font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main hgroup {
+    padding-top: 150px;
+  }
+  main hgroup h1 {
+    font-size: 5rem;
+  }
+  main hgroup h2 {
+    font-size: 4rem;
+  }
+  main p {
+    font-size: 1.5rem;
   }
 }
 
