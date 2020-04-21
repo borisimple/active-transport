@@ -58,6 +58,7 @@ section#contact aside {
   padding: 30px;
   margin: 2%;
   background-color: #4b9ae0;
+  box-shadow: #2266a1dc 0 5px 18px;
 }
 section#contact aside div {
   border: 2px solid white;
