@@ -54,13 +54,9 @@ main hgroup {
   text-transform: uppercase;
 }
 
-.parallax {
-  width: 100%;
-}
-
 img {
+  margin: 50px 0 50px -30%;
   width: 100%;
-  margin-left: -30%;
 }
 
 section#contact {
@@ -96,6 +92,9 @@ section#contact aside address {
   text-align: center;
   font-style: normal;
   line-height: 2rem;
+}
+section#contact aside address a {
+  margin-bottom: 20px;
 }
 section#contact aside address p.name {
   font-weight: 700;
