@@ -163,4 +163,21 @@ footer {
       font-size: 1.5rem;
     }
   }
+  .contact-wrapper {
+    aside {
+      text-transform: uppercase;
+    }
+    address {
+      a {
+        text-transform: initial;
+        font-size: 1.2rem;
+      }
+      p.name {
+        font-size: 1.3rem;
+      }
+      p.name span.phone {
+        font-size: 1.1rem;
+      }
+    }
+  }
 }

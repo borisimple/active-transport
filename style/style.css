@@ -154,6 +154,20 @@ footer {
   main p {
     font-size: 1.5rem;
   }
+
+  .contact-wrapper aside {
+    text-transform: uppercase;
+  }
+  .contact-wrapper address a {
+    text-transform: initial;
+    font-size: 1.2rem;
+  }
+  .contact-wrapper address p.name {
+    font-size: 1.3rem;
+  }
+  .contact-wrapper address p.name span.phone {
+    font-size: 1.1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
