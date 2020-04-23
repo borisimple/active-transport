@@ -1,5 +1,5 @@
 :root {
-  --bgColor: #3f8acd;
+  --bgColor: #102438;
   --textColor: #fff;
 }
 
@@ -102,7 +102,7 @@ img {
   aside {
     border-radius: 10px;
     padding: 30px;
-    background-color: #4b9ae0;
+    background-color: var(--bgColor);
     box-shadow: #2266a1dc 0 5px 18px;
     div {
       border: 2px solid white;
