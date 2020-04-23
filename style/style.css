@@ -55,51 +55,58 @@ main hgroup {
 }
 
 img {
-  margin: 50px 0 50px -25%;
+  margin: 80px 0 80px -25%;
   width: 100%;
 }
 
-section#contact {
+#contact h1 {
+  font-size: 2rem;
+  margin-bottom: 60px;
   display: flex;
-  position: relative;
-  justify-content: space-between;
+  justify-content: center;
 }
-section#contact aside {
-  flex-basis: 0;
-  flex-grow: 1;
-  width: 100%;
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+.contact-wrapper h1 {
+  text-align: center;
+}
+.contact-wrapper aside {
   border-radius: 10px;
   padding: 30px;
-  margin: 2%;
   background-color: #4b9ae0;
   box-shadow: #2266a1dc 0 5px 18px;
 }
-section#contact aside div {
+.contact-wrapper aside div {
   border: 2px solid white;
   border-radius: 0.2rem;
   padding: 30px;
   margin-bottom: 30px;
 }
-section#contact aside div p {
+.contact-wrapper aside div p {
   text-align: center;
 }
-section#contact aside div p.kg {
+.contact-wrapper aside div p.kg {
   font-size: 2rem;
   font-weight: 700;
   margin-top: 30px;
 }
-section#contact aside address {
+.contact-wrapper aside address {
   text-align: center;
   font-style: normal;
   line-height: 2rem;
 }
-section#contact aside address a {
-  margin-bottom: 20px;
+.contact-wrapper aside address a {
+  display: inline-block;
+  margin: 40px 0;
 }
-section#contact aside address p.name {
+.contact-wrapper aside address p.name {
   font-weight: 700;
 }
-section#contact aside address p span.phone {
+.contact-wrapper aside address p span.phone {
   font-weight: initial;
   font-size: 0.8rem;
 }
