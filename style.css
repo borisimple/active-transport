@@ -64,7 +64,7 @@ main hgroup {
   text-transform: uppercase;
 }
 
-img {
+img.header-pic {
   margin: 80px 0 80px -25%;
   width: 100%;
   animation: driveIn 1.5s;
